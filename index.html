@@ -28,13 +28,10 @@
 </head>
 <body>
 
-
-	
-<div class="video-background">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/w6JwEwYlJmg" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+  <source src="images/TrabalhosDeJogosEGames_Webm (video-converter.com).mp4" type="video/mp4">
+  <source src="images/TrabalhosDeJogosEGames _CodecVideo_MPEG2.mp4" type="video/mp4">
+</video>
 
 <!-- Main Container -->
 
@@ -54,6 +51,28 @@
 		
 		</a>
 	
+		<img src="images/PlayerRPGTOPDOWN.gif" alt="character"  width="250"/>  
+	<button onclick="typeWriter()" style="float:left">Olá!</button>
+	<p id="demo"></p>
+	<a href="#home" class="active">			 
+	<button onclick="typeWriter1()" style="float:left">Claro! Por isto estou aqui!</button>
+	<p id="onde"></p>
+		
+		
+		<!-- Trigger/Open The Modal -->
+<button id="myBtn" onclick="typeWriter()" style="float:left">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p></p>
+  </div>
+
+</div>
+
 
 	<!-- Simulate a smartphone / tablet look -->
 	<!--<div class="mobile-container"> -->
@@ -97,12 +116,7 @@
   <!-- About Section -->
   <section class="about" id="about">
 	  <br>
-	<img src="images/PlayerRPGTOPDOWN.gif" alt="character"  width="250"/>  
-	<button onclick="typeWriter()">Olá!</button>
-	<p id="demo"></p>
-	   <img src="images/logo-small.png" alt="logoFUMEC" width="20%" align="left" style="max-width:256px;max-height:98px;"/><a href="#home" class="active">			 
-	<button onclick="typeWriter1()">Claro! Por isto estou aqui!</button>
-	<p id="onde"></p>
+	
 	 
 	      <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Composer -->
@@ -378,7 +392,7 @@
 	  <h2 class="gradient">Corpo Docente</h2>
 		 <p>
 			<br>
-			<hr>
+		<gradient>	<hr>
 			<gradient> Docentes com experiência</gradient>
 			<gradient> comprovada no mercado</gradient>
 			<gradient> e na academia.</gradient>
@@ -388,7 +402,7 @@
 			<br>
 			<gradient> Arte,tecnologia, narrativa, gerenciamento </gradient>
 			<gradient>e empreendedorismo voltados</gradient>
-			<gradient> para a magia dos Jogos Digitais! </gradient>
+			<gradient> para a magia dos Jogos Digitais! </gradient></gradient>
 		</p>
 	<h1>Coordenação do Prof.Dr. João Vítor Boechat</h1>
 	<p>Doutor em Artes pela UFMG e Doutor em Física pela UNICAMP, com um período na Università di Pisa, na Itália. Realiza trabalhos e pesquisas em desenvolvimento de jogos digitais, narrativas para os meios digitais, cinema e televisão incluídos, edição e computação gráfica de produtos audiovisuais, na supervisão de pós-produção de programas educacionais e institucionais em diversas produtoras de conteúdo e emissoras de televisão, e outros projetos na área. Nos últimos anos, coordena o desenvolvimento de diversos aplicativos utilizando a visão computacional e os fundamentos da imagem digital. Coordenou o desenvolvimento do primeiro software livre no mundo de captura de movimento para animação (OpenMoCap), finalista do Prêmio Santander Ciência e Inovação de 2012. Coordena o laboratório de captura de movimento para animação (MoCapLab), que produziu os primeiros jogos digitais brasileiros com essa técnica, desde 2009. É autor do livro Imagem Digital Aplicada, pela Editora Campus/Elsevier, lançado em 2014. Coordena o Bacharelado em Computação Gráfica e o Curso Superior de Tecnologia em Jogos Digitais e é professor e orientador do Programa de Mestrado e Doutorado em Sistemas de Informação e Gestão do Conhecimento e do Mestrado em Estudos Culturais Contemporâneos da Universidade FUMEC. É bolsista do Programa Pesquisador Mineiro da FAPEMIG e de Produtividade em Desenvolvimento Tecnológico e Extensão Inovadora do CNPq.</p>
@@ -483,6 +497,35 @@
   }
 }
 	</script>
+<!--*Script de texto modal*-->
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
 <!-- Main Container Ends -->
