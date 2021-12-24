@@ -12,7 +12,7 @@ PAstel Yellow #FBF8BE
 body {
    /* background-color: hsla(240,100%,27%,0.52);*/
 	font-family: 'Press Start 2P', cursive;
-	color: #FFFFF;
+	color: #FBF8BE;
 	margin-right: 25px;
 	letter-spacing: 2px;
 	transition: all 0.3s linear;
@@ -149,10 +149,12 @@ div.content {
 	color: #2C9AB7;
 	text-align: center;
 	background-image: linear-gradient(to bottom, #f2a900, #FF6945, #234E70);
-	height:120px;	
+	height:240px;	
 	letter-spacing: 4px;
-	
+	position:fixed;
 	padding-bottom: 4px;
+	width:100%;
+	line-height: 1.8;
 }
 /* Hero Section */
 .hero {
