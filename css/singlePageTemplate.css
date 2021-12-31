@@ -7,7 +7,13 @@ Orange #FF6945
 Orange Light #f2a900
 PAstel Yellow #FBF8BE
 
+fonts
+font-family: 'Audiowide', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Rampart One', cursive;
+font-family: 'VT323', monospace;
 */
+
 /* Body */
 body {
    /* background-color: hsla(240,100%,27%,0.52);*/
@@ -25,7 +31,7 @@ body {
     font-weight: 200;
 	 line-height: 1.8;
 }
-p{
+h4{
 	color: white;
 	font-family: 'Press Start 2P', cursive;
 	 text-align: justify;
@@ -40,6 +46,14 @@ p{
   /* Adicionado: */
   -webkit-text-fill-color: transparent;
 	   
+}
+
+p{
+	color: white;
+	font-family: 'Audiowide', cursive;
+	text-align: justify;
+  text-justify: inter-word ;	
+		   
 }
 gradient {
   background-image: linear-gradient(to bottom, #f2a900, #FF6945, #234E70);
