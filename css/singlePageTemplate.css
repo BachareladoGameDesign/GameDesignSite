@@ -25,6 +25,22 @@ body {
     font-weight: 200;
 	 line-height: 1.8;
 }
+p{
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	 text-align: justify;
+  text-justify: inter-word ;
+	
+	
+	background-image: linear-gradient(to bottom, #f2a900, #FF6945, #234E70);
+  /*color: black;*/
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* Adicionado: */
+  -webkit-text-fill-color: transparent;
+	   
+}
 gradient {
   background-image: linear-gradient(to bottom, #f2a900, #FF6945, #234E70);
   /*color: black;*/
@@ -60,7 +76,7 @@ branco{
 }
 /* Navigation */
 header {
-	z-index: 1;
+	z-index: 5;
     position: fixed;	
     width: 100%;
     height: 152px;
@@ -70,43 +86,46 @@ header {
 .logo {
 	color: #fff;
 	font-weight: bold;
-	text-align: center;
-	
-	font-size: calc(10px + .5vw);	
-	letter-spacing: calc(4px + .1vw);
+	text-align: center;	
+	text-decoration: none;
+	font-size: calc(8px + .5vw);	
+	letter-spacing: calc(8px + .1vw);
 	white-space: nowrap;
 	background-image: linear-gradient(to top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,0.8));
 }
 nav {
 	
-	padding:1px;
+	padding-top:8px;
     float: right;
-    width:90%;
-    text-align: center;
-    margin-right: 9px;
+    width:100%;
+    text-align: right;
+    margin-right: 4px;
+	margin-left: 4px;
 	
 	
 }
-header nav ul {
+header nav ul {	
 	
 	list-style:none;
 	float: right;
-	background-image: linear-gradient(to top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,1));
-	
-	border-style: outset;
-	border-color: #FF6945;
+	z-index:5; 
 	
 }
 nav ul li {
 	font-family: 'Press Start 2P', cursive;
+	
+	white-space: nowrap;
 	float: left;
 	color: #FFFFF;
-	font-size: 12px;
-	text-align: left;
-	margin: 5px;
-	letter-spacing: 2px;
+	font-size: 16px;
+	text-align: justify;
+	padding: 4px;
+	letter-spacing: 8px;
 	transition: all 0.5s linear;
-	background-image: linear-gradient(to left, hsla(200, 85%,15%, 0.5), hsla(200, 85%, 85%,0.8));
+	background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));
+	
+	border-style: outset;
+	border-color: #FF6945;
 	
 }
 
@@ -116,9 +135,13 @@ ul li a {
 	
 }
 ul li:hover a {
-	color: #2C9AB7;
+	
 	background-image: linear-gradient(to right, hsla(60, 85%,85%, 0.8), hsla(200, 85%, 75%,0.8));
 	transition: all 0.5s linear;
+	padding: 1px;
+	
+	border-style: outset;
+	border-color: #f2a900;
 		
 }
 
@@ -128,43 +151,25 @@ div.content {
   height: 1000px;
 }
 
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
 .hero_header {
-	 
+	z-index:1; 
 	color: #2C9AB7;
 	text-align: center;
 	background-image: linear-gradient(to bottom, #f2a900, #FF6945, #234E70);
-	height:240px;	
+	height:68px;	
 	letter-spacing: 4px;
 	position:fixed;
-	padding-bottom: 4px;
+	padding: 4px;
 	width:100%;
 	line-height: 1.8;
 }
 /* Hero Section */
 .hero {
-    
-	top: 120px;     
-	padding-bottom: 35%;
+    z-index:2; 
+	top: 80px;     
+	padding-bottom: 49vw;
     position: relative;
-	height: 152px;
-	
-	
+	height: 252px;
 	
 }
 .light {
@@ -193,14 +198,16 @@ div.content {
 	color: #A3A3A3;
 }
 .about {
-	
-	background-image: linear-gradient(to top, hsla(200, 35%,15%, 0.96), hsla(200, 45%, 25%,0.96));
-    padding-left: 25px;
-    padding-right: 25px;
+	 text-align: justify;
+  text-justify: inter-word ;
+	background-image: linear-gradient(to top, hsla(200, 85%,15%, 0.9), hsla(200, 45%, 5%,1));
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 35px;
     display: inline-block;
     /*background-color: #00008B;*/
-    margin-top: 101px;
+    margin-top: 98px;
+	
 }
 
 .corpo {
@@ -210,6 +217,7 @@ div.content {
     padding-right: 25px;
     padding-top: 35px;
     display: inline-block;
+	
    
 }
 /* Stats Gallery */
@@ -268,9 +276,10 @@ div.content {
 	margin-top: 0px;
 }
 .parallax_description {
-	color: #FFFFFF;
+	color: white;
 	text-align: right;
 	padding-right: 100px;
+	font-size: calc (12px + .1vh)
 	width: 30%;
 	float: right;
 	font-weight: lighter;
@@ -283,12 +292,12 @@ div.content {
 /* More info */
 footer {
 	background-image: linear-gradient(to top, hsla(200, 35%,55%, 0.9), hsla(0, 5%, 5%,1));
-	padding-bottom: 35px;
+	padding: 35px;
 }
 .footer_column {
 	width: 50%;
 	text-align: center;
-	padding-top: 30px;
+	padding: 35px;
 	float: left;
 }
 footer .footer_column h3 {
@@ -346,6 +355,7 @@ footer .footer_column p {
 	background-color: #717070;
 	color: #FFFFFF;
 	text-transform: uppercase;
+	font-size:1vh;
 	font-weight: lighter;
 	letter-spacing: 2px;
 	border-top-width: 2px;
@@ -382,6 +392,7 @@ footer {
 	width: 100%;
 	float: none;
 	display: none;
+	
 }
 header nav ul {
 }
@@ -466,7 +477,7 @@ nav ul li {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    width: 100%;
+    width: 75%;
     float: none;
     overflow: auto;
     display: inline-block;
@@ -479,8 +490,8 @@ nav ul li {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    width: 100%;
+    margin-left: opx;
+    width: 50%;
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -582,7 +593,7 @@ nav ul li {
 }
 	
 	.carousel{
-		widht:80%;
+		widht:80%;		
 		margin:0 auto;
 	}
 }
@@ -627,13 +638,12 @@ nav ul li {
 }
 /*video Background*/
 video {
-	z-index: -100;
-  object-fit: cover ;
-   position: fixed;
- width: 98%;
-  min-width: 98%; 
-  min-height: 100%;
-  top: 65px;
+	z-index: -300;
+  object-fit: contain;
+  position: fixed;
+ width: 100%;
+  height:auto;
+  top: 300px;
   left: 1%;
 }
 
@@ -644,9 +654,9 @@ video {
 	position: fixed;
 	top:0px;
   width:100%;
-  margin: auto;
-   
-  height: 25px;
+	
+  margin: auto;   
+  
   color: white;
   border-radius: 10px;
 	
@@ -656,18 +666,18 @@ video {
     text-align: justify;
 	
     margin-right: 25px;
-	font-size: calc(10px + .2vw);
+	font-size: calc(16px + .2vw);
 	
-	line-height: calc(10px + .2vw);
-	letter-spacing: 5px;
+	line-height: calc(16px + .2vw);
+	letter-spacing: 2px;
 }
 
 .topnav {
 overflow: hidden;
-  background-color: #00008b;
+  /*background-color: #00008b;*/
   	position:fixed;
 	
-	 top:64px;
+	top:1px;
 	right:5px;
 }
 
@@ -680,9 +690,9 @@ overflow: hidden;
 .topnav a {
   /*float: right;*/
   color: white;
-  padding: 12px 12px;
+  padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .topnav a.icon {
@@ -802,4 +812,24 @@ overflow: hidden;
   color: #FF6945;
   text-decoration: none;
   cursor: pointer;
+}
+/*background video responsive*/
+.backgroundVideo{
+	 
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+
+
+/* Slider show de imagens*/
+
+.slideshow{
+	background-color: black;
 }
