@@ -56,7 +56,7 @@ p{
 		   
 }
 gradient {
-  background-image: linear-gradient(to bottom, #f2a900, #FF6945, #234E70);
+  background-image: linear-gradient(to top, #FBF8BE,#f2a900, #FF6945, #f2a900,#FBF8BE);
   /*color: black;*/
   background-clip: text;
   -webkit-background-clip: text;
@@ -93,9 +93,9 @@ header {
 	z-index: 5;
     position: fixed;	
     width: 100%;
-    height: 152px;
-    background-color: #55A4E9;	
-    
+    height: 153px;
+    /*background-color: #55A4E9;	*/
+    background-image: linear-gradient(to bottom, #234E70,#55A4E9,#55A4E9,#FBF8BE,#f2a900, #FF6945);
 }
 .logo {
 	color: #fff;
@@ -132,7 +132,7 @@ nav ul li {
 	float: left;
 	color: #FFFFF;
 	font-size: 16px;
-	text-align: justify;
+	text-align: center;
 	padding: 4px;
 	letter-spacing: 8px;
 	transition: all 0.5s linear;
@@ -144,19 +144,29 @@ nav ul li {
 }
 
 ul li a {
-	color: #FFFFFF;
+	
 	text-decoration: none;
 	
 }
 ul li:hover a {
 	
-	background-image: linear-gradient(to right, hsla(60, 85%,85%, 0.8), hsla(200, 85%, 75%,0.8));
+	background-image: linear-gradient(to right, hsla(60, 85%,85%, 0.9), hsla(200, 85%, 75%,0.9));
 	transition: all 0.5s linear;
-	padding: 1px;
+	font-family: 'Press Start 2P', cursive;
+	
+	white-space: nowrap;
+	float: left;
+	color: black;
+ 
+	text-align: center;
+	letter-spacing: 8px;
+	transition: all 0.5s linear;
+	
 	
 	border-style: outset;
-	border-color: #f2a900;
-		
+	border-color: #FF6945;
+	
+			
 }
 
 div.content {
@@ -305,7 +315,7 @@ div.content {
 }
 /* More info */
 footer {
-	background-image: linear-gradient(to top, hsla(200, 35%,55%, 0.9), hsla(0, 5%, 5%,1));
+	background-image: linear-gradient(to top, hsla(200, 35%,55%, 0.9), hsla(0, 0%, 0%,1));
 	padding: 35px;
 }
 .footer_column {
