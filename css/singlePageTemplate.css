@@ -97,7 +97,7 @@ header {
     width: 100%;
     height: 153px;
     /*background-color: #55A4E9;	*/
-    background-image: linear-gradient(to bottom, #55A4E9,#55A4E9,#FBF8BE,#f2a900, #FF6945);
+    background-image: linear-gradient(to bottom, #00008b,#55A4E9, #FF6945, #f2a900,#FBF8BE);
 }
 .logo {
 	color: #fff;
