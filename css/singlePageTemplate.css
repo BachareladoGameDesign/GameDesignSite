@@ -117,7 +117,7 @@ nav {
     text-align: right;
     margin-right: 8px;
 	margin-left: 8px;
-	background-image: linear-gradient(to top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,0.8));
+/*	background-image: linear-gradient(to top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,0.8));*/
 	
 }
 header nav ul {	
@@ -140,7 +140,7 @@ nav ul li {
 	transition: all 0.5s linear;
 	background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));
 	
-	border-style: outset;
+	border-style: inset ;
 	border-color: #FF6945;
 	
 }
@@ -153,16 +153,8 @@ ul li a {
 ul li:hover a {
 	
 	background-image: linear-gradient(to right, hsla(60, 85%,85%, 0.9), hsla(200, 85%, 75%,0.9));
-	transition: all 0.5s linear;
-/*	font-family: 'Press Start 2P', cursive;*/
-	font-family: 'Open Sans', sans-serif;
-	white-space: nowrap;
-	float: left;	
-	text-align: center;
-	letter-spacing: 8px;
-	transition: all 0.5s linear;	
-	border-style: outset;
-	border-color: #FF6945;	
+	border-style: inset ;
+	border-color: #f2a900;
 			
 }
 
@@ -225,11 +217,9 @@ div.content {
 	background-image: linear-gradient(to top, hsla(200, 85%,15%, 0.9), hsla(200, 45%, 5%,1));
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 35px;
+    padding-top: 45px;
     display: inline-block;
-    /*background-color: #00008B;*/
-    margin-top: 98px;
-	
+   	
 }
 
 .corpo {
