@@ -49,7 +49,19 @@ h4{
   -webkit-text-fill-color: transparent;
 	   
 }
-
+h1{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	 text-align: justify;
+  text-justify: inter-word ;	   
+}
+h5{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	 text-align: justify;
+  text-justify: inter-word ;	
+	   
+}
 p{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
@@ -108,6 +120,7 @@ header {
 	letter-spacing: calc(8px + .1vw);
 	white-space: nowrap;
 	background-image: linear-gradient(to top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,0.8));
+	
 }
 
 .icon{
@@ -227,7 +240,9 @@ div.content {
     display: inline-block;
    	
 }
-
+.jogos{
+	background-image: linear-gradient(to bottom,hsla(206, 52%, 29%,0.9), hsla(42, 100%, 47%,0.9), hsla(12, 100%, 64%,0.9), hsla(206, 52%, 29%,0.9));
+}
 .corpo {
 	text-align: justify;
   	text-justify: inter-word ;
