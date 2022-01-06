@@ -241,7 +241,9 @@ div.content {
    	
 }
 .jogos{
+	
 	background-image: linear-gradient(to bottom,hsla(206, 52%, 29%,0.9), hsla(42, 100%, 47%,0.9), hsla(12, 100%, 64%,0.9), hsla(206, 52%, 29%,0.9));
+	
 }
 .corpo {
 	text-align: justify;
@@ -862,3 +864,4 @@ overflow: hidden;
 .slideshow{
 	background-color: black;
 }
+
