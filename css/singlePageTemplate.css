@@ -509,7 +509,7 @@ nav ul li {
 	
 }
 .container header nav {
-    margin-top: 0px;
+    margin-top: 120px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -639,34 +639,21 @@ nav ul li {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create four(two) equal columns that sits next to each other 
 .column {
-  flex: 100%;
-  max-width: 100%;
+  flex: 50%;
+  max-width: 50%;
   padding: 0 4px;
-}
+}*/
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+	horizontal-align: middle;
   width:100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 /*video Background*/
 video {
 	z-index: -300;
@@ -684,21 +671,14 @@ video {
 	z-index: 100;
 	position: fixed;
 	top:0px;
-  width:100%;
-	
-  margin: auto;   
-  
-  color: white;
-  border-radius: 10px;
-	
+  	width:100%;
+	margin: auto;   
+  	color: white;
+  	border-radius: 4px;
 	padding:24px;
-    /*float: right;*/
-	
     text-align: justify;
-	
-    margin-right: 25px;
+	margin-right: 25px;
 	font-size: calc(16px + .2vw);
-	
 	line-height: calc(16px + .2vw);
 	letter-spacing: 2px;
 }
@@ -865,3 +845,44 @@ overflow: hidden;
 	background-color: black;
 }
 
+/*responsive cards*/
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+ background-image: linear-gradient(to top, hsla(200, 35%,55%, 0.9),hsla(0, 0%, 0%,1), hsla(0, 0%, 0%,1),hsla(200, 35%, 55%,1));
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+}
