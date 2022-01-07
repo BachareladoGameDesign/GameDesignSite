@@ -35,10 +35,10 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0" nonce="i2iOPGer"></script>-->
 
 	
-<video playsinline autoplay muted loop poster="polina.jpg" id="videoBG" style="object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+<video playsinline autoplay muted loop poster="polina.jpg" id="videoBG" style="object-fit: cover; // Set the magic
+  position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;">
   <source src="images/SpaceContrast.mp4" type="video/mp4">
@@ -115,10 +115,8 @@
   </header>
 	 
   <!-- Hero Section -->
-  <section class="hero" id="hero">
-    	
-	<h2 class="hero_header"><gradient> <p>Curso nota 5 pelo MEC</p> </gradient></h2>
-	  
+  <section class="carouselVideo" id="carouselVideo">
+   	  
  
  <!-- Single item 
     <div class="carousel-item">
@@ -143,11 +141,11 @@
       </ol>
 	  <div class="carousel-inner" role="listbox" style="width:70%; left:15%">
 		  
-		   <div class="pause-cycle-button">
+	<!--	   <div class="pause-cycle-button">
             <button type="button" class="btn btn-primary btn-customized">
                 <i class="fas fa-pause">Desativar sliding</i>
             </button>
-        </div>
+        </div>-->
 		  
 		 <div class="carousel-item active"> <div class="embed-responsive embed-responsive-16by9" ><iframe  width="560" height="315" src="https://www.youtube.com/embed/ET6uTQBKXx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 	      <div class="carousel-caption"  style="background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.15), hsla(200, 85%, 85%,0.15));  top:2%; height:6%;  pointer-events: none;">
@@ -193,9 +191,9 @@
 <!-- About Section -->
   <section class="about" id="about">
 	 
-	<div style=" width:100%; font-size: calc(12px + 1vh);">
+	<div style=" width:100%; ">
 		<br>   	  
-	<h1><gradient>O Curso de Design de Games</gradient></h1>
+	<h1>O Curso de Design de Games</h1>
 		<hr style="height:2px;border-width:0;color:white;background-color:gray">
 	  <p>
 	O Bacharelado em Design de Games traz ao aluno uma base de conhecimento sólida para que possa desempenhar as mais diversas funções, como: 
@@ -479,7 +477,7 @@
 	<!--Jogos dos Alunos-->
 	<section class="jogos" id= "jogos" style="padding:2vw; " >
 	
-	<h1><gradient>Jogos produzidos pelos Alunos no Curso.</gradient></h1>
+	<h1>Jogos produzidos pelos Alunos no Curso.</h1>
 		<hr style="height:2px;border-width:0;color:white;background-color:gray">
 			
 		<div class="row">	
@@ -546,7 +544,7 @@
 	
  <div class="corpo_column">
     <div class="card">
-			<p>Prof.Dr.João Víctor Boechat Gomide</p>
+			<h1>Prof.Dr.João Víctor Boechat Gomide</h1>
 			<img src="images/Final João Víctor2.jpg" >
 			<p>Doutor em Artes e em Física, realiza trabalhos e pesquisas em desenvolvimento de jogos digitais, narrativas para os meios digitais, cinema e televisão incluídos, edição e computação gráfica de produtos audiovisuais, na supervisão de pós-produção de programas educacionais e institucionais em diversas produtoras de conteúdo e emissoras.</p>
 		
@@ -562,7 +560,7 @@
 	
 <div class="corpo_column">
 	<div class="card">
-		<p>Prof.Marcelo Tanure</p>
+		<h1>Prof.Marcelo Tanure</h1>
 			<img src="images/Final Marcelo.jpg">
 		<p>Trabalha como professor de 3D há 10 anos, com foco nos cursos de Jogos Digitais e Computação Gráfica da Universidade FUMEC. Também já produziu 12 curtas metragens de animação e fez parte da equipe de FX de 2 longas metragens ( Star Wars e Vilsen), além de 3 games de grandes produtoras ( Ubisoft e Utherverse).</p>
 		
@@ -578,7 +576,7 @@
 	
 <div class="corpo_column">
    <div class="card">
-	   <p>Profa.Ma.Magda Rezende de Oliveira</p>
+	   <h1>Profa.Ma.Magda Rezende de Oliveira</h1>
 	  		<img src="images/Final Magda.jpg" >
 	   <p>Mestre em Artes Visuais e Tecnologias da Imagem, com ênfase em Cinema de Animação. Pesquisadora e professora nas áreas de imagens em movimento. Premiada em festivais de cinema e de animação Nacionais e Internacionais, dentre eles: Anima Mundi, Hiroshima, Annency e Stuttgard.</p>
 	   
@@ -595,7 +593,7 @@
 		
 <div class="corpo_column">
    <div class="card">
-	   <p>Prof.Me.Danilo Aroeira</p>
+	   <h1>Prof.Me.Danilo Aroeira</h1>
 		<img src="images/Final Danilo.jpg" >
 	   <p>Mestre em Artes Visuais- Cinema pela UFMG, especialista em História da Cultura e da Arte e bacharel em Publicidade e Propaganda. Ilustrador profissional, com diversos livros infantis e infantojuvenis. Quadrinista, ilustrador de diversas obras e criador do Samuray Boy. Participa há varios anos da CCXP, como palestrante.</p>
 	   
@@ -612,7 +610,7 @@
 		
 <div class="corpo_column">
    <div class="card">
-	   <p>Prof.Dr.Marcos André Penna Coutinho</p>
+	   <h1>Prof.Dr.Marcos André Penna Coutinho</h1>
       <img src="images/MiniBio_Site_CG.jpg" >
 	   <p>Doutor em Poéticas Tecnologicas, Mestre em Cinema, Graduado em Cinema de Animação(EBA-UFMG), e Graduado em Comunicação Social (PUC-MG). Pesquisador CNPQ no Laboratório de Poéticas Fronteiriças (LabFront) da UEMG. Sua Linha de Pesquisa preza pela Transdisciplinaridade nas Artes/Ciências, envolvendo Cibernética, Filosofia, Espiritualidade, Alquimia, Magia, Jogos Digitais e Analógicos. Possui atuação no mercado há 15 anos como desenvolvedor FullStack de Jogos Digitais.</p>
 	   <br>
@@ -627,7 +625,7 @@
 	
 <div class="corpo_column">
    <div class="card">
-	    <p>Prof.Me.Welerson Morais</p>
+	    <h1>Prof.Me.Welerson Morais</h1>
     	<img src="images/Final Welerson copy.jpg" >
 	   <p>Graduado em Produção Editorial e Mestre em Educação tecnológica. Profissional Generalista, trabalha há 18 anos nas diversas áreas do Design, da Animação 2D e na Pós-Produção de vídeo e fotografia. Professor e pesquisador, desenvolve pesquisas em Cinema, TV, Animação, Imagens Digitais e Games.</p>
 	   
@@ -645,7 +643,7 @@
 		
 	<div class="corpo_column">
    <div class="card">
-	   <p>Prof.Me.Luiz Cláudio</p>
+	   <h1>Prof.Me.Luiz Cláudio</h1>
 	  <img src="images/Final Luiz Claudio.jpg" >
 	    <p>Graduado em Engenharia Eletrônica(PUC) e em Direito(UFMG). Mestre em Direito de Propriedade Intelectual. Atua nas áreas de Propriedade Intelectual, Direito Empresarial e uso de tecnologias disruptivas, desde o início de sua carreira profissional, em empresas de tecnologia, software e telecomunicações.</p>
 	   
@@ -661,7 +659,7 @@
 		  </div>
 	<div class="corpo_column">
    <div class="card">
-	   <p>Prof.Pg.Ronaldo</p>
+	   <h1>Prof.Pg.Ronaldo</h1>
 		<img src="images/Final Ronaldo.jpg" >
 	    <p>Graduado em Design Gráfico pela UEMG e pós-graduado em Cinema, TV e Novas Mídias pelo UNI-BH. Há mais de 20 anos atuando no mercado de computação gráfica e animação 3D, dirigindo e produzindo comerciais para TV, vinhetas de abertura e filmes institucionais. Atualmente é sócio-diretor na produtora de animação digital Z1, onde produz conteúdo para TV, jogos eletrônicos e realidade virtual.</p>
 	   
@@ -677,7 +675,7 @@
 	  </div>
 	<div class="corpo_column">
    <div class="card">
-	   <p>Prof.Me.Márcio Brant</p>
+	   <h1>Prof.Me.Márcio Brant</h1>
 		<img src="images/Final Marcio.jpg" >
 	    <p>Graduado em Música pela Escola de Música da UFMG e Mestre em Artes Visuais pela Escola de Belas Artes da UFMG. Com mais de 20 anos de experiência, Márcio Brant é produtor musical, cantor, compositor e sócio-proprietário da Natrilha Produções, estúdio de áudio no qual são produzidas trilhas sonoras para filmes e publicidade, além de produção musical e direção artística para artistas da música</p>
 	   
