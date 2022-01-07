@@ -113,6 +113,7 @@ header {
 }
 .logo {
 	color: #fff;
+	 width: 100%;
 	font-weight: bold;
 	text-align: center;	
 	text-decoration: none;
@@ -184,6 +185,7 @@ div.content {
 }
 
 .hero_header {
+	 width: 100%;
 	z-index:1; 
 	color: #2C9AB7;
 	text-align: center;
@@ -198,6 +200,7 @@ div.content {
 }
 /* Hero Section */
 .hero {
+	 width: 100%;
     z-index:2; 
 	top: 80px;     
 	padding-bottom: 49vw;
