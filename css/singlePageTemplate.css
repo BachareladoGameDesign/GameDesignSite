@@ -31,7 +31,7 @@ body {
     font-weight: 200;
 	 line-height: 1.8;
 	 width:100vw;
-   
+   height: 100vh;
     
 }
 h4{
@@ -56,7 +56,8 @@ p {
 /*	font-size: 1px;*/
 	font-family: 'Open Sans', sans-serif;
 	 text-align: justify;
-  text-justify: inter-word ;	   
+  text-justify: inter-word ;	
+	
 }
 h5{
 	font-size:calc(12px + .1vw);
@@ -88,6 +89,7 @@ gradient {
 
   /* Adicionado: */
   -webkit-text-fill-color: transparent;
+	
 	   
 }
 branco{
@@ -133,17 +135,17 @@ header {
 	z-index: 5;
  	position:fixed;
 	width: 100%;
-    height: 156px;
+    height: 164px;
     background-image: linear-gradient(to bottom, #00008b,#55A4E9, #FF6945, #f2a900,#FBF8BE);
 }
 .logo {
 	color: #fff;
-	 width: 100%;
+	width: 100%;
 	font-weight: bold;
 	text-align: center;	
 	text-decoration: none;
 	font-size: calc(8px + .5vw);	
-	letter-spacing: calc(8px + .1vw);
+	letter-spacing: calc(4px + .1vw);
 	white-space: nowrap;
 	background-image: linear-gradient(to top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,0.8));
 	
@@ -151,37 +153,37 @@ header {
 }
 
 .icon{
+	/*position: absolute;*/
 	background-color: #f2a900;
 	float:right;
+	right: 1%;
 	padding-left:4px;padding-right:4px;
 	margin-right:5vw;
 	border-style: outset ;
 	border-color: #FF6945;
-	border-radius:3px;
+	border-radius:1px;
 	
 }
 .icon:hover {
 	background-color: #FBF8BE;
-	padding:9px;
 	box-shadow: 0 4px 8px 0 #FF6945;; /* this adds the "card" effect */
-	border-radius:5px;
+	border-radius:8px;
 }
 
 nav {
 
 }
 header nav ul {	
-	
+
 	list-style:none;
-	left:5%;
 	z-index:5; 
 	padding:2px;
-	width:90%;
+	width:96%;
 	
 }
 nav ul li {
 	/*font-family: 'Press Start 2P', cursive;*/
-	box-shadow: 0 -1px 8px 0 #00008b; /* this adds the "card" effect */
+	box-shadow: 0 1px 8px 0 #00008b; /* this adds the "card" effect */
 	white-space: nowrap;
 		float:right;
 	text-align: center;
@@ -190,8 +192,7 @@ nav ul li {
 	transition: all 0.5s linear;
 	background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));	
 	border-style: outset ;
-	border-color: #FF6945;
-	
+	border-color: #FF6945;	
 	display: inline;
 	
 }
@@ -245,7 +246,7 @@ ul li:hover a {
 	font-weight: lighter;
 	line-height: 25px;
 	float: left;
-	padding: 20px;
+	padding: 4px;
 	margin: 9px;
 	
 	color: #A3A3A3;
@@ -278,6 +279,7 @@ ul li:hover a {
 }
 .jogos p {
 	font-size:calc(12px + .5vw);
+	
 }
 .jogos h1 {
 	font-size:calc(16px + .5vw);
@@ -286,10 +288,12 @@ ul li:hover a {
   background-clip: text;
   -webkit-background-clip: text;
   /* Adicionado: */
-  -webkit-text-fill-color: transparent;	
+  -webkit-text-fill-color: transparent;
+	
 }
 .corpo p {
 	font-size:calc(12px + .5vw);
+	
 }
 .corpo h1 {
 	font-size:calc(16px + .5vw);
@@ -334,7 +338,7 @@ ul li:hover a {
 .corpo_column {
 	width: 25%;
 	text-align: center;
-	padding: 35px;
+	padding: 4px;
 	float: left;
 	
 }
@@ -427,7 +431,7 @@ footer {
 .footer_column {
 	width: 50%;
 	text-align: center;
-	padding: 35px;
+	padding: 4px;
 	float: left;
 	
 }
@@ -640,7 +644,7 @@ video {
 .column {
   float: left;
   width: 25%;
-  padding: 10px;
+  padding: 4px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -653,7 +657,7 @@ video {
   clear: both;
 }
 
-/* Style the counter cards */
+/* Style the Professors cards */
 .card {
   box-shadow: 0 4px 8px 0 #00008b; /* this adds the "card" effect */
   padding: 4px;
@@ -676,28 +680,59 @@ video {
   margin-left: auto;
   margin-right: auto;
 	width:75%;
-	box-shadow: 0 4px 8px 0 #FF6945; /* this adds the "card" effect */
+	box-shadow: 0 4px 8px 0 #FF6945;  
 	border-bottom-left-radius:50%;
 	border-bottom-right-radius:50%;
 }
-
 .card p {
 	padding:24px;
 	font-size:calc(8px + .5vw);
 }
+/*cards dos Games*/
+.game {
+  box-shadow: 0 4px 8px 0 #00008b; /* this adds the "card" effect */
+  padding: 4px;
+  text-align: center;
+ background-image: linear-gradient(to top, hsla(200, 35%,55%, 0.9),hsla(0, 0%, 0%,1), hsla(0, 0%, 0%,1),hsla(200, 35%, 55%,1));
+}
+.game-title{
+	font-size:calc(10px + .5vw);
+	background-image: linear-gradient(to top, hsla(60, 35%,55%, 0.9),hsla(0, 100%, 100%,1), hsla(0, 100%, 100%,1),hsla(60, 35%, 55%,1));
+  /*color: black;*/
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* Adicionado: */
+  -webkit-text-fill-color: transparent;
+			
+}
+.game img{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width:75%;
+	box-shadow: 0 4px 8px 0 #FF6945; /* this adds the "card" effect */
+		
+}
+
+.game p {
+	padding:24px;
+	font-size:calc(8px + .5vw);
+}
+
 /* Responsive screen Small */
 @media screen and (max-width: 991px) {
   .corpo_column {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
   }
 	
 
 
 header {
 	width: 100%;
-    height: 156px;
+    height: 164px;
   
 }
 .hero {
@@ -712,7 +747,7 @@ header {
   .corpo_column {
     width: 50%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
   }
 }
 
