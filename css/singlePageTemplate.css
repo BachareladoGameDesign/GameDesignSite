@@ -125,8 +125,8 @@ branco{
 header {
 	z-index: 5;
  	position:fixed;
-	width: 100vw;
-    height: 153px;
+	width: 100%;
+    height: 172px;
     background-image: linear-gradient(to bottom, #00008b,#55A4E9, #FF6945, #f2a900,#FBF8BE);
 }
 .logo {
@@ -766,13 +766,27 @@ header {
     z-index: -1;
 }
 @media (min-aspect-ratio: 16/9) {
-    #videoBG {
+     body {
+       
+        background-size: cover;
+		/* For mobile phones: */
+ 	    width: 100%;
+ 
+    }
+	#videoBG {
         width:100%;
         height: auto;
     }
 }
 @media (max-aspect-ratio: 16/9) {
-    #videoBG { 
+     body {
+       
+        background-size: cover;
+		/* For mobile phones: */
+ 	    width: 100%;
+ 
+    }
+	#videoBG { 
         width:auto;
         height: 100%;
     }
@@ -782,8 +796,11 @@ header {
         display: none;
     }
     body {
-        background: url('poster.jpg');
+       
         background-size: cover;
+		/* For mobile phones: */
+ 	    width: 100%;
+ 
     }
 }
 
@@ -800,8 +817,8 @@ header {
 
     left:0;
     top:0;
-    height:100%;
-    width:100%;
+   
+    width:80%; height:auto;
     position:absolute;
 
 }
