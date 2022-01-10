@@ -73,6 +73,13 @@ h5{
   text-justify: inter-word ;	
 		   
 }*/
+center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+  
+}
 gradient {
   background-image: linear-gradient(to top, #FBF8BE,#f2a900, #FF6945, #f2a900,#FBF8BE);
   /*color: black;*/
@@ -126,7 +133,7 @@ header {
 	z-index: 5;
  	position:fixed;
 	width: 100%;
-    height: 172px;
+    height: 156px;
     background-image: linear-gradient(to bottom, #00008b,#55A4E9, #FF6945, #f2a900,#FBF8BE);
 }
 .logo {
@@ -649,7 +656,7 @@ video {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 #00008b; /* this adds the "card" effect */
-  padding: 16px;
+  padding: 4px;
   text-align: center;
  background-image: linear-gradient(to top, hsla(200, 35%,55%, 0.9),hsla(0, 0%, 0%,1), hsla(0, 0%, 0%,1),hsla(200, 35%, 55%,1));
 }
@@ -687,40 +694,10 @@ video {
   }
 	
 
-nav {
-	
-	padding-top:8px;
-    float: right;
-    
-    text-align: right;
-    margin-right: 8px;
-	margin-left: 8px;
-	/*margin-top:128px;*/
-/*	background-image: linear-gradient(to top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,0.8));*/
-	
-}
-
-nav ul li {
-	/*font-family: 'Press Start 2P', cursive;*/
-	box-shadow: 0 4px 8px 0 #00008b; /* this adds the "card" effect */
-	white-space: nowrap;
-	float: left;
-	color: #FFFFF;
-	font-size: 12px;
-	text-align: center;
-	padding: 2px;
-	letter-spacing: 4px;
-	transition: all 0.5s linear;
-	background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));
-	
-	border-style: inset ;
-	border-color: #FF6945;
-	
-}
 
 header {
 	width: 100%;
-    height: 198px;
+    height: 156px;
   
 }
 .hero {
@@ -782,23 +759,4 @@ header {
  	    width: 100%;
  
     }
-}
-
-.map-responsive{
-
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-
-}
-
-.map-responsive iframe{
-
-    left:0;
-    top:0;
-   
-    width:80%; height:auto;
-    position:absolute;
-
 }
