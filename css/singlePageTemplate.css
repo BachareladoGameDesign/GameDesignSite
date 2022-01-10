@@ -148,54 +148,54 @@ header {
 	float:right;
 	padding:8px;
 	margin-right:5vw;
+	border-style: outset ;
+	border-color: #FF6945;
+	border-radius:3px;
 }
 .icon:hover {
 	background-color: #FBF8BE;
 	padding:9px;
-	box-shadow: 0 4px 8px 0 #FFF; /* this adds the "card" effect */
+	box-shadow: 0 4px 8px 0 #FF6945;; /* this adds the "card" effect */
+	border-radius:5px;
 }
 
 nav {
 
 }
 header nav ul {	
-	
+	position: fixed;
 	list-style:none;
-	float: right;
+	left:5%;
 	z-index:5; 
+	padding:4px;
+	width:90%;
 	
 }
 nav ul li {
 	/*font-family: 'Press Start 2P', cursive;*/
-	box-shadow: 0 4px 8px 0 #00008b; /* this adds the "card" effect */
+	box-shadow: 0 -1px 8px 0 #00008b; /* this adds the "card" effect */
 	white-space: nowrap;
-	float: left;
-	color: #FFFFF;
-	font-size: 14px;
+	float: left;	
 	text-align: center;
-	padding: 2px;
+	padding:6px;	
 	letter-spacing: 8px;
 	transition: all 0.5s linear;
-	background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));
-	
-	border-style: inset ;
-	border-color: #FF6945;
+	background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));	
+	border-style: outset ;
+	border-color: #FF6945;margin:1%;display: inline;
 	
 }
 
 ul li a {
 	
 	text-decoration: none;
-	
+	color:#000;
+	padding:4px;
 }
 ul li:hover a {
 	
-	background-image: linear-gradient(to right, hsla(60, 85%,85%, 0.9), hsla(200, 85%, 75%,0.9));
-	border-style: inset ;
-	border-color: #f2a900;
 	box-shadow: 0px 4px 4px 0px #FBF8BE; /* this adds the "card" effect */
-	
-	
+	font-weight: 900;
 	animation:colorchg 2s infinite;
   animation-timing-function: ease-in-out;
   animation-duration: 32s;
@@ -314,7 +314,7 @@ ul li:hover a {
 
 /* More info */
 .corpo {
-	widht:100%;
+	widht:100vw;
 	text-align: justify;
   	text-justify: inter-word ;
 	background-image: linear-gradient(to top, hsla(200, 85%,0%, 0),hsla(200, 85%,15%, 0.9));
@@ -690,8 +690,21 @@ video {
 
   /* Adicionado: */
   -webkit-text-fill-color: transparent;
-	
-		
+			
+}
+.card img{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width:75%;
+	box-shadow: 0 4px 8px 0 #FF6945; /* this adds the "card" effect */
+	border-bottom-left-radius:50%;
+	border-bottom-right-radius:50%;
+}
+
+.card p {
+	padding:24px;
+	font-size:calc(8px + .5vw);
 }
 /* Responsive screen Small */
 @media screen and (max-width: 991px) {
@@ -701,11 +714,6 @@ video {
     margin-bottom: 20px;
   }
 	
-.icon{
-/*	background-color: #f2a900;*/
-	background-color: #000;
-	/*margin-top:128px;*/
-}
 
 nav {
 	
