@@ -413,7 +413,7 @@ corpo .corpo_column p {
 	color: #52BAD5;
 	text-align: right;
 	padding-right: 5%;
-	font-size: calc(12px + .1vh);
+	font-size: calc(12px + .5vh);
 	float: right;
 	font-weight: lighter;
 	line-height: 23px;
