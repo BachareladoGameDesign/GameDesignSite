@@ -157,57 +157,70 @@ header {
 	background-color: #f2a900;
 	float:right;
 	right: 1%;
-	padding-left:4px;padding-right:4px;
-	margin-right:5vw;
+	padding-left:2px;padding-right:2px;
+	margin-right:1vw;
 	border-style: outset ;
 	border-color: #FF6945;
-	border-radius:1px;
+	border-radius:4px;
 	
 }
 .icon:hover {
 	background-color: #FBF8BE;
 	box-shadow: 0 4px 8px 0 #FF6945;; /* this adds the "card" effect */
-	border-radius:8px;
+	border-radius:2px;
 }
 
 nav {
 width:100%;
-	
+	background-color: #FBF8BE;
 }
+
 header nav ul {	
 
 	list-style:inline;
 	z-index:5; 
 	padding:0px;
 	width:100%;
-	
+	background-image: linear-gradient(164deg, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));	
 }
 nav ul li {
 	/*font-family: 'Press Start 2P', cursive;*/
 	box-shadow: 0 1px 8px 0 #00008b; /* this adds the "card" effect */
 	white-space: nowrap;
-		float:right;
+	float:right;
 	text-align: center;
-	padding:2px;	
+	padding-left:1%;padding-right:1%;	
 	letter-spacing: 4px;
 	transition: all 0.5s linear;
-	background-image: linear-gradient(to bottom, hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));	
+	background-image: linear-gradient(12deg,  hsla(200, 85%, 85%,0.9),hsla(200, 85%,15%, 0.9), hsla(200, 85%, 85%,0.9));	
 	border-style: outset ;
 	border-color: #FF6945;	
 	display: inline;
 	
 	
 }
-
-ul li a {
+nav ul:hover li {
+	box-shadow: 0 1px 8px 0 hsla(200, 85%,15%, 1); /* this adds the "card" effect */
+	transition: all 4s linear;
+	background-image: linear-gradient(-12deg, hsla(200, 85%,15%, 0.9),hsla(200, 85%, 85%,0.9), hsla(200, 85%,15%, 0.9));	
+	border-style: outset ;
+	
+}
+ul li a{
 	
 	text-decoration: none;
-	color:#000;
+	color:white;
+	padding:2px;
+}
+ul li a:hover {
+	
+	text-decoration: none;
+	color:red;
 	padding:2px;
 }
 ul li:hover a {
 	
-	box-shadow: 0px 4px 4px 0px #FBF8BE; /* this adds the "card" effect */
+	box-shadow: 0px 4px 4px 0px #55A4E9; /* this adds the "card" effect */
 	font-weight: 900;
 	animation:colorchg 2s infinite;
   animation-timing-function: ease-in-out;
@@ -215,6 +228,7 @@ ul li:hover a {
   -webkit-animation: glow 3s ease-in-out infinite alternate;
   -moz-animation: glow 3s ease-in-out infinite alternate;
   animation: glow 3s ease-in-out infinite alternate;
+	
 }
 
 
@@ -812,12 +826,28 @@ header {
 		}
 }
 @media (max-width: 476px) {
+	
 	nav ul li{
 		display:block;	
 		padding:1px;	
-		letter-spacing: 0px;
-		width:16%;
-			font-size:.5em;
+		letter-spacing: 1px;
+		width:30%;
+		font-size:1px;
 		}
 	}
 
+/*collapsable section*/
+.collapsible {
+    cursor: pointer;
+  }
+
+.active, .collapsible:hover {
+background-image: linear-gradient(to top,hsla(0, 0%, 0%,1), hsla(200, 35%,55%, 0.9),hsla(0, 0%, 0%,1));
+	color:white;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+ 
+}
